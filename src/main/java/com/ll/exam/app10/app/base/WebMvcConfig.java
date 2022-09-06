@@ -12,7 +12,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/gen-file/**")
+        registry.addResourceHandler("/gen/**")
                 .addResourceLocations("file:///" + genFileDirPath + "/");
     }
 }
